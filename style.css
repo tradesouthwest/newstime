@@ -216,6 +216,15 @@ NewsTime is distributed under the terms of the GNU GPL
   margin-left: 30px;
 }
 
+.footer-widgets {
+  display: grid;
+  grid-template-columns: none;
+}
+
+.newstime-poweredby {
+  color: black;
+}
+
 /* --------------------------------------------------------------------------
    1. News Ticker / Marquee
    -------------------------------------------------------------------------- */
@@ -249,6 +258,7 @@ NewsTime is distributed under the terms of the GNU GPL
 	letter-spacing: 1px;
 	white-space: nowrap;
 	z-index: 2;
+  margin-left: 2rem;
 }
 
 .ticker-content-wrapper {
@@ -909,6 +919,89 @@ NewsTime is distributed under the terms of the GNU GPL
     clear: both;
   }
 
+/* --------------------------------------------------------------------------
+   Widget Calendar Styling
+   -------------------------------------------------------------------------- */
+   .widget_calendar {
+    width: 100%;
+  }
+  
+  .widget_calendar table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  /* Table Caption (Month / Year Navigation Header) */
+  .widget_calendar caption {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+    color: #1a1a1a;
+    caption-side: top;
+  }
+  
+  /* Table Headers (Days of the week) */
+  .widget_calendar th {
+    background-color: #f4f4f4;
+    color: #333333;
+    font-weight: 700;
+    padding: 6px 0;
+    border: 1px solid #e0e0e0;
+  }
+  
+  /* Individual Calendar Cells */
+  .widget_calendar td {
+    padding: 6px 2px;
+    border: 1px solid #e0e0e0;
+    color: #555555;
+    vertical-align: middle;
+  }
+  
+  /* Link Styling (Days with published posts) */
+  .widget_calendar td a {
+    display: block;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #e50914; /* Matches NewsTime primary accent */
+    text-decoration: none;
+    border-radius: 2px;
+    padding: 2px 0;
+  }
+  
+  .widget_calendar td a:hover {
+    background-color: #1a1a1a;
+    color: #ffffff;
+  }
+  
+  /* Highlight Today's Date */
+  .widget_calendar #today {
+    background-color: #f0f0f0;
+    font-weight: 700;
+  }
+  
+  /* Footer Navigation (Previous / Next Month links) */
+  .widget_calendar .wp-calendar-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    font-size: 0.85rem;
+  }
+  
+  .widget_calendar .wp-calendar-nav a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .widget_calendar .wp-calendar-nav a:hover {
+    color: #e50914;
+    text-decoration: underline;
+  }
+
   /* ==========================================================================
      5.0 - Media Queries
      ========================================================================== */
@@ -937,4 +1030,10 @@ NewsTime is distributed under the terms of the GNU GPL
     .page-nav {
       flex-wrap: nowrap;
     }
+
+    .footer-widgets {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
   }

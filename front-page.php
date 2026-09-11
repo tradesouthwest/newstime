@@ -140,28 +140,10 @@ get_header();
 		</div>
 	</section>
 		<section class="front-page-inner-content">
-			<div class="top-widget">
-			<?php 
-			if ( is_active_sidebar( 'top-newstime-widget' ) ) : ?>
+			
+			<?php the_content(); ?>
 
-					<?php dynamic_sidebar( 'top-newstime-widget' ); ?>
-            
-			<?php 
-			endif; ?>
-			</div>
-<?php the_content(); ?>
-<div class="bottom-widget">
-<?php 
-			if ( is_active_sidebar( 'bottom-newstime-widget' ) ) : ?>
-
-					<?php dynamic_sidebar( 'bottom-newstime-widget' ); ?>
-            
-			<?php 
-			endif; ?>
-			</div>
-								</section>
-
-
+		</section>
 </main>
 
 <?php

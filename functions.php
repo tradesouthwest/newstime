@@ -177,9 +177,9 @@ function newstime_widgets_init() {
 	);
     register_sidebar(
 		array(
-			'name'          => __( 'Top Front Page Widgets', 'newstime' ),
-			'id'            => 'top-newstime-widget',
-			'description'   => __( 'Add widgets here to appear above the front page content.', 'newstime' ),
+			'name'          => __( 'Footer Left', 'newstime' ),
+			'id'            => 'left-newstime-footer',
+			'description'   => __( 'Add widgets here to appear in the left side of footer.', 'newstime' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -188,9 +188,9 @@ function newstime_widgets_init() {
 	);
     register_sidebar(
 		array(
-			'name'          => __( 'Bottom Front Page Widgets', 'newstime' ),
-			'id'            => 'bottom-newstime-widget',
-			'description'   => __( 'Add widgets here to appear below the front page content.', 'newstime' ),
+			'name'          => __( 'Footer Right', 'newstime' ),
+			'id'            => 'right-newstime-footer',
+			'description'   => __( 'Add widgets here to appear in the right side of footer.', 'newstime' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
