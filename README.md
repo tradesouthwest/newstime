@@ -22,7 +22,7 @@ URI:          https://github.com/tradesouthwest/startmeup
 
 ## Description: 
 
-Custom layout front page. Has ticker at top and a hero size recnet posts ezine display. Sticky post has priority to show first. Front page tmeplate has additional widgets that can be used to place more posts into the front page content. You can remove the widget section and add a post slider or post shortcode for more coverage. Options to change theme color scheme and background.
+Custom layout front page. Has ticker at top and a hero size recnet posts ezine display. Sticky post has priority to show first. Add a post slider or post shortcode for more coverage. Options to change theme color scheme and background.
 
 Demo @ https://themes.classicpress-themes.com/newstime/
 
