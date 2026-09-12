@@ -125,7 +125,12 @@ get_header();
 									<h3 class="card-title">
 										<a href="<?php the_permalink(); ?>"><?php echo esc_html( get_the_title() ); ?></a>
 									</h3>
-									<span class="card-date"><?php echo esc_html( get_the_date() ); ?></span>
+									<div class="entry-excerpt">
+                    					<p><?php echo esc_html( newstime_get_custom_excerpt( 15 ) ); ?></p>
+                					</div>
+										<span class="card-date">
+											<?php echo esc_html( get_the_date() ); ?>
+										</span>
 								</div>
 							</article>
 						
@@ -139,6 +144,7 @@ get_header();
 			</div>
 		</div>
 	</section>
+	
 		<section class="front-page-inner-content">
 			
 			<?php the_content(); ?>

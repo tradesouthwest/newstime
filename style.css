@@ -58,13 +58,13 @@ NewsTime is distributed under the terms of the GNU GPL
     overflow-wrap: break-word;
     line-height: 1.8;
     margin-bottom: 1rem;
-    font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace, monospace;
+    font-family:  Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
   }
   
   p, dl {
     font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
     font-weight: normal;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 1.648;
     margin-bottom: 1em;
     color: #393a3b;
@@ -163,12 +163,11 @@ NewsTime is distributed under the terms of the GNU GPL
      2.0 - Layout & Structure
      ========================================================================== */
 /* Layout Base Containers */
-.newstime-front-page .container {
+.newstime-front-page .container{
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 1rem;
 }
-
 .page-header {
   display: block; 
   height: 180px;
@@ -225,6 +224,9 @@ NewsTime is distributed under the terms of the GNU GPL
   color: black;
 }
 
+.sticky {
+  font-family: sans-serif;
+}
 /* --------------------------------------------------------------------------
    1. News Ticker / Marquee
    -------------------------------------------------------------------------- */

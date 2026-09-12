@@ -331,6 +331,38 @@ function newstime_breadcrumbs_nav() {
 	echo '</nav>';
 }
 
+/**
+ * Trims post excerpt or content to a strict word count.
+ *
+ * @param int $word_limit Maximum number of words to display.
+ * @return string Trimmed excerpt with trailing ellipsis if truncated.
+ */
+function newstime_get_custom_excerpt( $word_limit = 15 ) {
+    $post = get_post();
+
+    if ( ! $post ) {
+        return '';
+    }
+
+    // Use explicit excerpt if available; fall back to post content
+    $text = ! empty( $post->post_excerpt ) ? $post->post_excerpt : $post->post_content;
+
+    // Clean up shortcodes, HTML tags, and non-breaking spaces
+    $text = strip_shortcodes( $text );
+    $text = wp_strip_all_tags( $text );
+    $text = str_replace( '&nbsp;', ' ', $text );
+
+    // Split words cleanly while preserving multibyte string handling
+    $words = preg_split( '/\s+/', trim( $text ), -1, PREG_SPLIT_NO_EMPTY );
+
+    if ( count( $words ) > $word_limit ) {
+        $words = array_slice( $words, 0, $word_limit );
+        return implode( ' ', $words ) . '&hellip;';
+    }
+
+    return implode( ' ', $words );
+}
+
 /** 
  * Customizer
  * suport footer background & text color
@@ -340,10 +372,13 @@ function newstime_breadcrumbs_nav() {
 
 /* Adding files here to apply to the following functions below */
 require get_template_directory() . '/includes/customizer.php';
+
 /**
  * Inject customizer dynamic inline styles into wp_head.
  */
-function newstime_customizer_css() {
+if ( !function_exists( 'newstime_customizer_css_tohead' ) ) :
+
+function newstime_customizer_css_tohead() {
 	$accent_color = get_theme_mod( 'primary_accent_color', '#e50914' );
 
 	// Don't print output if using default color
@@ -383,7 +418,8 @@ function newstime_customizer_css() {
 				color: <?php echo esc_html( $sanitized_color ); ?>;
 			}
 
-            .featured-main-card, .sub-feature-card {
+            .featured-main-card, .sub-feature-card,
+			.shortcode-post-card  {
                 border-color: <?php echo esc_html( $sanitized_color ); ?>;
             }
 
@@ -396,4 +432,6 @@ function newstime_customizer_css() {
 		<?php
 	endif;
 }
-add_action( 'wp_head', 'newstime_customizer_css' );
+add_action( 'wp_head', 'newstime_customizer_css_tohead' );
+endif;
+?>
