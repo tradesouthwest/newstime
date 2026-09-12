@@ -59,7 +59,8 @@ get_header();
                                 
                                 <div class="after-excrpt">
                         
-                                    <p class="after-cats"><span><small><?php esc_html_e('Categorized as: ', 'startmeup'); ?></small></span> <small><em><?php the_category( ' &bull; ' ); ?></em></small>
+                                    <p class="after-cats"><span><small><?php esc_html_e('Categorized as: ', 'newstime'); ?></small></span> 
+                                    <small><em><?php the_category( ' &bull; ' ); ?></em></small>
                                     / <small><em class="excerpt_footer-date">
                                     <?php printf( esc_attr( get_the_date() ) ); ?></em></small></p>
                 

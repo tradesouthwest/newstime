@@ -32,9 +32,9 @@ get_header(); ?>
                         <div class="inner-featured-image">
                             
                             <?php 
-                            the_post_thumbnail( 'startmeup-featured', array( 
+                            the_post_thumbnail( 'newstime-featured', array( 
                                 'itemprop' => 'image', 
-                                'class'  => 'startmeup-featured',
+                                'class'  => 'newstime-featured',
                                 'alt'  => get_the_title()
                                 ) 
                             ); ?>
@@ -57,16 +57,16 @@ get_header(); ?>
                         the_content( ); ?>
                     
                     <p><?php wp_link_pages(	array(
-                    'before' => '<div class="page-link"><span>' . __( 'Pages:', 'startmeup' ) . '</span>',
+                    'before' => '<div class="page-link"><span>' . __( 'Pages:', 'newstime' ) . '</span>',
                     'after'  => '</div>', 
                     ) ); ?></p>
 
                 </div>
                     <div class="after-content">
-                        <p class="after-cats"><span><small><?php esc_html_e('By: ', 'startmeup'); ?></span> <em><?php the_author(); ?></em></small>
-                        | <span><small><?php esc_html_e('Categorized as: ', 'startmeup'); ?></span> <em><?php the_category( ' &bull; ' ); ?></em></small>
-                        | <span><small><?php esc_html_e('Keys: ', 'startmeup'); ?></span> <em><?php the_tags( ' ' ); ?></em></small>
-                        | <span><small><?php esc_html_e('Added on: ', 'startmeup'); ?></span> <em><?php the_date(); ?></em></small></p>
+                        <p class="after-cats"><span><small><?php esc_html_e('By: ', 'newstime'); ?></span> <em><?php the_author(); ?></em></small>
+                        | <span><small><?php esc_html_e('Categorized as: ', 'newstime'); ?></span> <em><?php the_category( ' &bull; ' ); ?></em></small>
+                        | <span><small><?php esc_html_e('Keys: ', 'newstime'); ?></span> <em><?php the_tags( ' ' ); ?></em></small>
+                        | <span><small><?php esc_html_e('Added on: ', 'newstime'); ?></span> <em><?php the_date(); ?></em></small></p>
                     </div>
                 
                 <?php 

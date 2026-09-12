@@ -28,7 +28,7 @@
 
     <a class="skip-link screen-reader-text" aria-label="first content" 
         href="#sitecontent">
-        <?php esc_html_e( 'Skip to content', 'startmeup' ); ?>
+        <?php esc_html_e( 'Skip to content', 'newstime' ); ?>
     </a>
 
         <header class="page-header">
