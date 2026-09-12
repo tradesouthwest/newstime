@@ -2,7 +2,8 @@
 /**
  * Page template Mostly used for pages, post type.
  *
- * @package Startmeup
+ * @package Newstime
+ * @since   1.0.0
  */
 
 get_header();

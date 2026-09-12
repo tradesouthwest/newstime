@@ -4,8 +4,8 @@
  * Sets up theme defaults and registers support for various WordPress features.
  * 
  * @package    ClassicPress
- * @subpackage Hello Theme
- * @since      1.0.1
+ * @subpackage Newstime
+ * @since      1.0.0
  *
  */
  if ( ! defined( 'ABSPATH' ) ) {

@@ -2,7 +2,8 @@
 /**
  * Index template Mostly used for blog page.
  *
- * @package Startmeup
+ * @package Newstime
+ * @since 1.0.0
  */
 
 get_header();

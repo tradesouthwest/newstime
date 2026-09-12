@@ -4,8 +4,8 @@
  *
  * Displays all of the head element and everything up until the "main" tag.
  *
- * @package hello theme
- * @since   1.0
+ * @package Newstime
+ * @since   1.0.0
  */
 
 ?><!DOCTYPE html>

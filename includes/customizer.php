@@ -2,6 +2,7 @@
 /**
  * Register Primary Accent Color in the existing Colors section.
  *
+ * @package Newtime theme
  * @param WP_Customize_Manager $wp_customize Customizer object.
  */
 function newstime_customize_colors( $wp_customize ) {

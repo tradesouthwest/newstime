@@ -3,6 +3,7 @@
  * NewsTime Front Page The template for displaying the front page.
  *
  * @package            NewsTime
+ * @since              1.0.0
  */
 
 get_header();

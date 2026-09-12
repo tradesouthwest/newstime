@@ -1,6 +1,6 @@
 # Newstime
 
-Custom layout front page. Has ticker at top and a hero size recnet posts ezine display.
+Custom layout front page. Has ticker at top and a hero size recnet posts ezine display. 
 
 Version:      1.0.0
 

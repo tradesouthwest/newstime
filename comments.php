@@ -5,8 +5,8 @@
  * The area of the page that contains both current comments
  * and the comment form.
  *
- * @package tinydancer
- * @since tinydancer 1.0.8
+ * @package Newstime
+ * @since 1.0.0
  */
 
 /*
