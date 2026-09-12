@@ -18,7 +18,7 @@ License:      See https://opensource.org/license/gpl-3.0
 
 Text domain:  startmeup
 
-URI:          https://github.com/tradesouthwest/startmeup
+URI:          https://github.com/tradesouthwest/newstime
 
 ## Description: 
 
