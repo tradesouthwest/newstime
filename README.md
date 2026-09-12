@@ -26,3 +26,5 @@ Custom layout front page. Has ticker at top and a hero size recnet posts ezine d
 
 Demo @ https://themes.classicpress-themes.com/newstime/
 
+![screenshot of theme](screenshot.png)
+
