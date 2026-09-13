@@ -15,8 +15,8 @@ get_header();
                 echo wp_kses_post( force_balance_tags( newstime_breadcrumbs_nav() ) ); } ?>
         </div>
 
-<main id="primary" class="site-main newstime-index-body">
-          <section id="sitecontent" class="index-page-body">
+<main id="primary" class="site-main">
+          <section id="sitecontent" class="index-content">
             <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
 
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope 

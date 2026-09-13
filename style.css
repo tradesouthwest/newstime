@@ -203,12 +203,13 @@ NewsTime is distributed under the terms of the GNU GPL
 }
 
 .front-page-inner-content,
-.newstime-index-body,
-.newstime-page-page,
-.newstime-single-page {
-	width: 85.222%;
-	margin: 1em auto;
+.archive-content,
+.single-content,
+.index-content,
+.page-content {
   padding: 10px 20px;
+  margin: 0 auto;
+  width: 82.5%;
 }  
 
 .inner-sidebar {
@@ -1010,10 +1011,11 @@ NewsTime is distributed under the terms of the GNU GPL
   
   @media screen and (min-width: 800px) { 
    
-  
-    .site-main {
+   .site-main {
+      display: grid;
       grid-template-columns: 1fr .5fr;
     }
+
     .page-nav .menu-item-has-children .sub-menu {
       display: none;
     }

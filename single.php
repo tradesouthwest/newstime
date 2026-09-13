@@ -18,10 +18,9 @@ get_header(); ?>
                 echo wp_kses_post( force_balance_tags( newstime_breadcrumbs_nav() ) ); } ?>
         </div>
         
-<main id="primary" class="site-main newstime-single-page">
+<main id="primary" class="site-main newstime-index-body">
+          <section id="sitecontent" class="single-content">
 
-        <section id="sitecontent" class="index-page-body">
-    
             <?php while ( have_posts() ) : the_post(); ?>
                 <header class="article-heading">
                     <h2><?php the_title(); ?></h2>

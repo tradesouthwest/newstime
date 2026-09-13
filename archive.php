@@ -13,9 +13,9 @@ get_header();
             if ( function_exists( 'newstime_breadcrumbs_nav' ) ) {
                 echo wp_kses_post( force_balance_tags( newstime_breadcrumbs_nav() ) ); } ?>
         </div>
-<main id="primary" class="site-main newstime-single-page">
+<main id="primary" class="site-main">
 
-        <section id="sitecontent" class="index-page-body">
+        <section id="sitecontent" class="archive-content">
         
             <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
 
@@ -107,6 +107,7 @@ get_header();
             endif; ?>
 
         </section>
+
             <aside class="blog-sidebar">
         
                 <?php get_sidebar(); ?>
